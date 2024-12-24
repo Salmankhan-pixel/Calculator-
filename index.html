@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="buttons">
+        <div class="See">
+          <p class="values"></p>
+          <p class="values2"></p>
+        </div>
+        <p class="upper-Buttons">
+          <button class="btn b1 b3 b4" onclick="Reset()">AC</button>
+          <button class="btn b1 b4" onclick="updateValue('/')">/</button>
+          <button class="btn b1 b4" onclick="updateValue('%')">%</button>
+          <button class="btn b2" onclick="updateValue('/')">&divide</button>
+        </p>
+        <p>
+          <button class="btn b1" onclick="updateValue('7')">7</button>
+          <button class="btn b1" onclick="updateValue('8')">8</button>
+          <button class="btn b1" onclick="updateValue('9')">9</button>
+          <button class="btn b2" onclick="updateValue('*')">X</button>
+        </p>
+        <p>
+          <button class="btn b1" onclick="updateValue('4')">4</button>
+          <button class="btn b1" onclick="updateValue('5')">5</button>
+          <button class="btn b1" onclick="updateValue('6')">6</button>
+          <button class="btn b2" onclick="updateValue('-')">-</button>
+        </p>
+        <p>
+          <button class="btn b1" onclick="updateValue('1')">1</button>
+          <button class="btn b1" onclick="updateValue('2')">2</button>
+          <button class="btn b1" onclick="updateValue('3')">3</button>
+          <button class="btn b2" onclick="updateValue(' + ')">+</button>
+        </p>
+
+        <p>
+          <button class="btn b1" onclick="updateValue('.')">.</button>
+          <button class="btn b1" onclick="updateValue('(')">(</button>
+          <button class="btn b1" onclick="updateValue(')')">)</button>
+          <button
+            class="btn b2"
+            onclick="Calculator = eval(Calculator) ;console.log(Calculator); "
+          >
+            Ans
+          </button>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
